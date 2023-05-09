@@ -1,9 +1,16 @@
 import React from 'react';
-
+import { Button } from '@chakra-ui/react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return
-  <h1>hello</h1>
+  return(
+    <Router>
+      <Button colorScheme={"cyan"}>Click</Button>
+      <Routes>
+        <Route />
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;

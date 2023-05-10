@@ -10,6 +10,7 @@ import {
   Button,
   useDisclosure,
   Stack,
+  HStack,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { BiMenuAltLeft } from 'react-icons/bi';
@@ -40,11 +41,35 @@ const {isOpen,onOpen,onClose} = useDisclosure();
             <DrawerCloseButton />
             <DrawerHeader>MY VIDEOS</DrawerHeader>
             <DrawerBody>
-                <VStack>
-                    <Button colorScheme="telegram">
+                <VStack alignItems={'flex-start'}>
+                    <Button onClick={onClose} variant={"ghost"} colorScheme="telegram">
                         <Link to={"/"}>Home</Link>
                     </Button>
+
+                    <Button onClick={onClose} variant={"ghost"} colorScheme="telegram">
+                        <Link to={"/videos"}>Videos</Link>
+                    </Button>
+
+                    <Button onClick={onClose} variant={"ghost"} colorScheme="telegram">
+                        <Link to={"/video?category-free"}>Free Videos</Link>
+                    </Button>
+
+                    <Button onClick={onClose} variant={"ghost"} colorScheme="telegram">
+                        <Link to={"/upload"}>Upload Video</Link>
+                    </Button>
                 </VStack>
+
+                <HStack pos={"absolute"} bottom={'10'} left={'10'} justifyContent={'space-evenly'}>
+
+                    <Button onClick={onClose} colorScheme={'telegram'}>
+                        <Link to={"/login"}>Log in</Link>
+                    </Button>
+
+                    <Button onClick={onClose} colorScheme={'telegram'} variant={'outline'}>
+                        <Link to={"/signup"}>Sign Up</Link>
+                    </Button>
+
+                </HStack>
             </DrawerBody>
             <div>hello</div>
         </DrawerContent>

@@ -49,7 +49,7 @@ const Videos = () => {
             colorScheme={'telegram'}
             onClick={() => setVideoSrc(item)}
           >
-            Lecture {index + 1}
+            Video {index + 1}
           </Button>
         ))}
       </VStack>

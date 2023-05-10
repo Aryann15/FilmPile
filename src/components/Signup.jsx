@@ -5,6 +5,7 @@ import {
     Input,
     Button,
     Text,
+    Avatar
   } from '@chakra-ui/react';
   import React from 'react';
   import { Link } from 'react-router-dom';
@@ -19,8 +20,20 @@ import {
             m={'auto'}
             my={'16'}
           >
-            <Heading>WELCOME BACK!</Heading>
-  
+            <Heading>FILMPILE</Heading>
+            <Avatar alignSelf={'center'} boxSize={"32"} />
+            <Input
+              placeholder={}
+              type={'email'}
+              required
+              focusBorderColor={'blue.500'}
+            />
+            <Input
+              placeholder={'email'}
+              type={'email'}
+              required
+              focusBorderColor={'blue.500'}
+            />
             <Input
               placeholder={'email'}
               type={'email'}

@@ -6,6 +6,9 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Videos from './components/Videos';
 import Upload from './components/Upload';
+import Signup from './components/Signup';
+import Login from './components/Login';
+
 function App() {
   return(
     <Router>

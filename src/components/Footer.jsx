@@ -9,7 +9,7 @@ const Footer = () => {
         <Stack direction ={['column', 'row']}>
             <VStack w={'full'}
 >
-                <Heading  >SUBSCRIBE FOR UPDATES</Heading>
+                <Heading  textAlign={'center'}>SUBSCRIBE FOR UPDATES</Heading>
                 <HStack borderBottom={'2px solid white'} py='2'>
                     <Input placeholder="Enter email Here...."
                     border={'none'}

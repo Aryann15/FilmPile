@@ -7,7 +7,8 @@ const Videos = () => {
   const [videoSrc, setVideoSrc] = useState(videosArr[0]);
 
   return (
-
+    <Stack direction={['column', 'row']} h={'100vh'}>
+      <VStack w={'full'}>
       <div style={{ width: '1200px', height: '680px' }}>
   <video
     controls
@@ -21,6 +22,31 @@ const Videos = () => {
   ></video>
 </div>
 
+        <VStack alignItems={'flex-start'} p={'8'} w={'full'} overflowY={'auto'}>
+          <Heading> SAMPLE VIDEO 1</Heading>
+          <Text>hello hi</Text>
+        </VStack>
+      </VStack>
+
+      <VStack
+        w={['full', 'xl']}
+        alignItems={'stretch'}
+        p={'8'}
+        spacing={'8'}
+        overflow={'auto'}
+      >
+        {videosArr.map((item, index) => (
+          <Button
+            variant={'ghost'}
+            colorScheme={'telegram'}
+            onClick={() => setVideoSrc(item)}
+          >
+            Lecture {index + 1}
+          </Button>
+        ))}
+      </VStack>
+    </Stack>
+  );
 };
 
 export default Videos;

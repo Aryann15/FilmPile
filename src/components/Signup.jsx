@@ -23,8 +23,8 @@ import {
             <Heading>FILMPILE</Heading>
             <Avatar alignSelf={'center'} boxSize={"32"} />
             <Input
-              placeholder={}
-              type={'email'}
+              placeholder={"Name"}
+              type={'text'}
               required
               focusBorderColor={'blue.500'}
             />
@@ -32,13 +32,7 @@ import {
               placeholder={'email'}
               type={'email'}
               required
-              focusBorderColor={'blue.500'}
-            />
-            <Input
-              placeholder={'email'}
-              type={'email'}
-              required
-              focusBorderColor={'blue.500'}
+              focusBorderColor={'blue.500'}    
             />
             <Input
               placeholder={'password'}
@@ -46,17 +40,13 @@ import {
               required
               focusBorderColor={'blue.500'}
             />
-            <Button variant={'link'} alignSelf={'flex-end'}>
-              <Link to={'/forgetpassword'}>Forget Password</Link>
-            </Button>
-  
             <Button colorScheme={'telegram'} type={'submit'}>
               {' '}
-              Login
+              Sign up
             </Button>
-            <Text textAlign={'right'}> New User?{" "}
+            <Text textAlign={'right'}> Already a user?{" "}
             <Button variant={'link'} colorScheme={'telegram'}>
-              <Link to={'/signup'}>Sign Up</Link>
+              <Link to={'/login'}>Login</Link>
             </Button>
             </Text>
           </VStack>
